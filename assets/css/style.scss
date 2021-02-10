@@ -1,0 +1,310 @@
+$brown: #784F33;
+$white: #FFFFFF;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.button {
+    padding: 18px 36px;
+    border-radius: 37px;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* light-text-color */
+    transition: .3s ease-in-out;
+}
+
+.button-fill {
+    border: 1px solid transparent;
+    color: $white;
+    background: $brown;
+    &:hover {
+        border-color: $brown;
+        color: $brown;
+        background: transparent;
+    }
+}
+
+.button-outline {
+    border: 1px solid $brown;
+    color: $brown;
+    &:hover {
+        color: $white;
+        background: $brown;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: #f3f3f3;
+    .logo-wrapper {
+        margin-right: 76px;
+        h1 {
+            /* Prosecurse */
+            /* h3 */
+            font-family: 'Martel' sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            letter-spacing: 0.1px;
+            /* text-color */
+            color: #252B42;
+        }
+    }
+    ul {
+        padding-left: 0px;
+        li {
+            display: inline-block;
+            padding: 0px 14px;
+            a {
+                /* link */
+                /* link */
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 171% */
+                text-align: center;
+                letter-spacing: 0.2px;
+                /* second-text-color */
+                color: #737373;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.banner-sc {
+    min-height: 100vh;
+    padding: 116px 0px;
+    padding-bottom: 332px;
+    background: url(../img/banner-h.png) no-repeat;
+    background-size: cover;
+    .content {
+        width: 509px;
+        h1 {
+            /* h1 */
+            /* h1 */
+            font-family: 'Martel' sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 58px;
+            line-height: 65px;
+            /* or 112% */
+            letter-spacing: 0.2px;
+            /* text-color */
+            color: #252B42;
+            /* Inside Auto Layout */
+            margin: 0px;
+        }
+        p {
+            margin: 36px 0px;
+            font-family: 'Martel' sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            /* or 150% */
+            letter-spacing: 0.2px;
+            /* second-text-color */
+            color: #737373;
+        }
+    }
+}
+
+.banner-card-list {
+    margin-top: -200px;
+    .card-list {
+        .col-4 {
+            padding: 0px 16px;
+        }
+        .card-item {
+            background: #FFFFFF;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            padding: 35px 40px;
+            .img-outer {
+                width: 48px;
+                /* SHADOW */
+            }
+            .content {
+                h2 {
+                    font-family: 'Martel', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    /* identical to box height, or 133% */
+                    letter-spacing: 0.1px;
+                    /* text-color */
+                    color: #252B42;
+                    margin-top: 12px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    /* paragraph */
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* or 143% */
+                    letter-spacing: 0.2px;
+                    /* second-text-color */
+                    color: #737373;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+.section-header {
+    /* h2 */
+    font-family: 'Martel' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.2px;
+    /* text-color */
+    color: #252B42;
+    max-width: 468px;
+}
+
+.section-desc {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.2px;
+    /* second-text-color */
+    color: #737373;
+    max-width: 468px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.matters-sc {
+    background-color: #FAFAFA;
+    padding-top: 164px;
+    padding-bottom: 94px;
+    .col-3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card-item {
+        padding: 30px 40px;
+        background: white;
+        .img-outer {
+            width: 48px;
+        }
+        .content {
+            h1 {
+                margin-top: 16px;
+                margin-bottom: 8px;
+                font-family: 'Martel' sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                /* identical to box height, or 125% */
+                letter-spacing: 0.2px;
+                /* text-color */
+                color: #252B42;
+            }
+            p {
+                font-family: 'Martel' sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+                letter-spacing: 0.1px;
+                /* second-text-color */
+                color: #737373;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.who-r-we-sc {
+    background-color: white;
+}
